@@ -68,15 +68,15 @@ export default function Home() {
 
           <div className="hidden items-center gap-8 text-sm font-medium text-slate-300 md:flex">
             <a className="text-white" href="#">Inicio</a>
-            <a className="transition hover:text-cyan-300" href="#servicios">Servicios</a>
-            <a className="transition hover:text-cyan-300" href="#proceso">Cómo trabajamos</a>
-            <a className="transition hover:text-cyan-300" href="#proyectos">Proyectos</a>
-            <a className="transition hover:text-cyan-300" href="#contacto">Contacto</a>
+            <a className="transition duration-300 hover:text-cyan-300" href="#servicios">Servicios</a>
+            <a className="transition duration-300 hover:text-cyan-300" href="#proceso">Cómo trabajamos</a>
+            <a className="transition duration-300 hover:text-cyan-300" href="#proyectos">Proyectos</a>
+            <a className="transition duration-300 hover:text-cyan-300" href="https://wa.me/5214411057847?text=Hola%2C%20vi%20su%20p%C3%A1gina%20Aureon%20y%20quiero%20automatizar%20mi%20negocio" target="_blank" rel="noopener noreferrer">Contacto</a>
           </div>
 
           <a
             href="#contacto"
-            className="hidden rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-5 py-3 text-sm font-bold shadow-lg shadow-blue-600/25 transition hover:scale-105 md:block"
+            className="hidden rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-5 py-3 text-sm font-bold shadow-lg shadow-blue-600/25 transition hover:-translate-y-1 hover:scale-105 hover:shadow-purple-600/40 hover:shadow-purple-600/40 md:block"
           >
             Solicitar información
           </a>
@@ -104,13 +104,13 @@ export default function Home() {
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <a
               href="#servicios"
-              className="rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-7 py-4 text-center font-bold shadow-lg shadow-blue-600/25 transition hover:scale-105"
+              className="rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-7 py-4 text-center font-bold shadow-lg shadow-blue-600/25 transition hover:-translate-y-1 hover:scale-105 hover:shadow-purple-600/40"
             >
               Ver nuestros servicios
             </a>
             <a
               href="#contacto"
-              className="rounded-xl border border-cyan-400/60 bg-white/5 px-7 py-4 text-center font-bold transition hover:bg-cyan-400/10"
+              className="rounded-xl border border-cyan-400/60 bg-white/5 px-7 py-4 text-center font-bold transition hover:-translate-y-1 hover:bg-cyan-400/10 hover:shadow-lg hover:shadow-cyan-500/20"
             >
               Contáctame por WhatsApp
             </a>
@@ -216,14 +216,14 @@ export default function Home() {
             {services.map((service) => (
               <div
                 key={service.title}
-                className="group rounded-3xl border border-white/10 bg-white/[0.04] p-7 text-left transition hover:scale-[1.03] hover:border-blue-500/60 hover:bg-white/[0.07]"
+                className="group rounded-3xl border border-white/10 bg-white/[0.04] p-7 text-left transition hover:-translate-y-2 hover:scale-[1.03] hover:border-blue-500/60 hover:bg-white/[0.07]"
               >
                 <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-900 to-purple-800 text-3xl shadow-lg shadow-blue-950/30">
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-black">{service.title}</h3>
                 <p className="mt-4 leading-7 text-slate-400">{service.text}</p>
-                <p className="mt-7 font-bold text-blue-400 transition group-hover:text-cyan-300">Saber más →</p>
+                <p className="mt-7 font-bold text-blue-400 transition duration-300 group-hover:text-cyan-300">Saber más →</p>
               </div>
             ))}
           </div>
@@ -251,7 +251,7 @@ export default function Home() {
             {process.map(([icon, title, text]) => (
               <div
                 key={title}
-                className="rounded-3xl border border-white/10 bg-white/[0.05] p-7 transition hover:scale-[1.03] hover:bg-white/[0.08]"
+                className="rounded-3xl border border-white/10 bg-white/[0.05] p-7 transition hover:-translate-y-2 hover:scale-[1.03] hover:bg-white/[0.08]"
               >
                 <div className="mb-4 text-4xl">{icon}</div>
                 <h3 className="mb-3 text-xl font-black">{title}</h3>
@@ -271,7 +271,7 @@ export default function Home() {
 
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {projects.map((project) => (
-              <div key={project.title} className="rounded-3xl border border-white/10 bg-white/[0.05] p-8 transition hover:scale-[1.03] hover:border-purple-500/60">
+              <div key={project.title} className="rounded-3xl border border-white/10 bg-white/[0.05] p-8 transition hover:-translate-y-2 hover:scale-[1.03] hover:border-purple-500/60">
                 <span className="rounded-full border border-purple-400/30 bg-purple-400/10 px-3 py-1 text-xs font-bold text-purple-300">
                   {project.tag}
                 </span>
@@ -292,10 +292,10 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-            <a href="mailto:contacto@aureon.mx" className="rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 font-black shadow-lg shadow-blue-600/20 transition hover:scale-105">
+            <a href="mailto:contacto@aureon.mx" className="rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 font-black shadow-lg shadow-blue-600/20 transition hover:-translate-y-1 hover:scale-105 hover:shadow-purple-600/40">
               Solicitar información
             </a>
-            <a href="https://wa.me/5210000000000" target="_blank" className="rounded-xl border border-cyan-400/70 bg-black/20 px-8 py-4 font-black transition hover:bg-cyan-400/10">
+            <a href="https://wa.me/5214411057847?text=Hola%2C%20vi%20su%20p%C3%A1gina%20Aureon%20y%20quiero%20automatizar%20mi%20negocio" target="_blank" className="rounded-xl border border-cyan-400/70 bg-black/20 px-8 py-4 font-black transition hover:-translate-y-1 hover:bg-cyan-400/10 hover:shadow-lg hover:shadow-cyan-500/20">
               WhatsApp
             </a>
           </div>
