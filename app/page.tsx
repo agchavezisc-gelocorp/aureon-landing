@@ -305,6 +305,23 @@ export default function Home() {
       <footer className="relative z-10 border-t border-white/10 px-6 py-8 text-center text-sm text-slate-500">
         © {new Date().getFullYear()} Aureon. Soluciones inteligentes, automatización e inteligencia artificial.
       </footer>
+
+      <a
+        href="https://wa.me/5214411057847?text=Hola%2C%20vi%20su%20p%C3%A1gina%20Aureon%20y%20quiero%20automatizar%20mi%20negocio"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar por WhatsApp"
+        className="fixed bottom-6 right-6 z-50 flex h-16 w-16 items-center justify-center rounded-full bg-green-500 text-3xl shadow-2xl shadow-green-500/40 transition hover:-translate-y-1 hover:scale-110 hover:bg-green-400"
+      >
+        <svg
+          viewBox="0 0 32 32"
+          className="h-9 w-9 fill-white"
+          aria-hidden="true"
+        >
+          <path d="M16.04 3C8.86 3 3.03 8.82 3.03 15.98c0 2.29.6 4.52 1.75 6.49L3 29l6.7-1.76a12.9 12.9 0 0 0 6.34 1.66h.01c7.17 0 13-5.82 13-12.98C29.05 8.82 23.22 3 16.04 3Zm0 23.7h-.01a10.7 10.7 0 0 1-5.45-1.49l-.39-.23-3.98 1.04 1.06-3.87-.25-.4a10.68 10.68 0 0 1-1.64-5.77c0-5.9 4.81-10.7 10.72-10.7 2.86 0 5.55 1.11 7.57 3.13a10.62 10.62 0 0 1 3.14 7.56c0 5.9-4.81 10.73-10.77 10.73Zm5.88-8.02c-.32-.16-1.9-.94-2.2-1.04-.29-.11-.5-.16-.72.16-.21.32-.83 1.04-1.02 1.26-.19.21-.37.24-.69.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.61-1.9-1.8-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.73-.98-2.37-.26-.62-.52-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.1-1.12 2.68s1.15 3.11 1.31 3.32c.16.21 2.26 3.45 5.48 4.84.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37Z" />
+        </svg>
+      </a>
+
     </main>
   );
 }
